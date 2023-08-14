@@ -11,9 +11,9 @@ const Mori20 = () => {
  
     
     const position = useMemo(() => {
-      const x = Math.random() * 40;
-      const y = Math.random() * 40;
-      const z = Math.random() * 40;
+      const x = Math.random() * 20;
+      const y = Math.random() * 20;
+      const z = Math.random() * 20;
       const bounds = viewport.getCurrentViewport(camera, [x, y, z]);
       return [
         THREE.MathUtils.randFloatSpread(bounds.width),
